@@ -1,6 +1,26 @@
 # FileContentSearch
 Small tool to look into all files of a directory and it's subdirectories and mark the files in which a given term appears.
 
+```
+CMD> fcs.exe def -d src -l -e .py
+
+Searching in src for ['def']
+
+>> def
+    cmd_parser.py
+        [18, 41, 49]
+    data\files.py
+        [19, 24, 29, 34, 39, 44, 47]
+    data\search_result.py
+        [18, 23, 36, 49, 54, 59, 62]
+    dir_walker.py
+        [21, 32, 33, 37, 47, 64, 75, 90]
+    file_content_search.py
+        [19, 28, 39, 59, 76, 92, 111]
+    file_inspector.py
+        [19, 36, 47, 60, 74, 110, 141]
+```
+
 ## Install
 **Building the executable yourself:**
 1. Download source: *git clone https://github.com/Ste-Tis/FileContentSearch.git*
