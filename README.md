@@ -1,8 +1,6 @@
 # FileContentSearch
 Small tool to look into all files of a directory and it's subdirectories and mark the files in which a given term appears.
 
-![FileContentSearch](https://ibb.co/gLRNxT)
-
 ## Install
 **Building the executable yourself:**
 1. Download source: *git clone https://github.com/Ste-Tis/FileContentSearch.git*
