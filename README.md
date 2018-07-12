@@ -43,11 +43,11 @@ fcs.exe [term] -d [target-dir] -e [extensions] -l
 ```
 
 ## Parameter
-Combine the following commandline are supported in the current version.
+The following commandline parameters are supported in the current version.
 
 **Search for multiple terms at once:**
 ```
-fcs.exe "Egon Olsen" 
+fcs.exe "Egon Olsen" "Benny Frandsen" "Kjeld Jensen"
 ```
 Separate terms by space and use double quotes to include whitespaces in the term.
 
@@ -56,14 +56,14 @@ Separate terms by space and use double quotes to include whitespaces in the term
 fcs.exe [term] -d C:\My\Path\To\Root\
 fcs.exe [term] --dir C:\My\Path\To\Root\
 ```
-If no directory is given, the current active directory in the commandline tool is searched.
+If no directory is given, the currently active directory is searched.
 
 **Only look into files with given extensions:**
 ```
 fcs.exe [term] -e .py .txt
 fcs.exe [term] -extensions .py .txt
 ```
-Only files with the given extensions are searched. Separathe multiple extensions by space.
+Only files with the given extensions are searched. Separate multiple extensions by space.
 
 **Show in which line term appears:**
 ```
@@ -72,7 +72,7 @@ fcs.exe [term] --lines
 ```
 Also show in which line of the file the term appears. Search will take longer.
 
-**Active case sensitive search:**
+**Activate case sensitive search:**
 ```
 fcs.exe [term] -cs
 fcs.exe [term] --case-sensitive
